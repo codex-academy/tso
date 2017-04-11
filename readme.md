@@ -15,7 +15,7 @@ The key to creating dropdowns with no duplicates is to be able to create lists w
 The basic algorithm for creating a unique list is:
 
 * Create a new empty list that will be your unique list, lest call it `uList`.
-* Loop through you list with duplicates
+* Loop through the list with duplicates
 * Check if each entry in the list exist in `uList` if not add it in there.
 
 There are various ways to check for entries in `uList`:
