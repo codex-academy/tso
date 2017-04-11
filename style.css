@@ -1,12 +1,39 @@
 body {
     background-color: #4CAF50;
     margin: 1em;
+    font-family: arial;
 }
 
 input[type='button']{
     width : 10em;
     height: 2em;
 }
+
+table {
+    width : 50%;
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
 
 .container {
     width : 1024px;
