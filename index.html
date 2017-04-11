@@ -19,6 +19,7 @@
         <span class="field">
             <label for="teacher">Teachers</label>
             <select class="teachers" class="teacherFilter">
+            <option value="">Select</option>
             {{#each teachers}}
                 <option>{{this}}</option>
             {{/each}}
@@ -27,6 +28,7 @@
         <span class="field">
             <label for="subject">Subjects</label>
             <select class="" class="subjectFilter">
+            <option value="">Select</option>
             {{#each subjects}}
                 <option>{{this}}</option>
             {{/each}}
@@ -35,6 +37,7 @@
         <span class="field">
             <label for="teacher">Grades</label>
             <select class="" class="gradesFilter">
+            <option value="">Select</option>
             {{#each grades}}
                 <option>{{this}}</option>
             {{/each}}
