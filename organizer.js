@@ -41,7 +41,9 @@
         filters.innerHTML = filterTemplate({
             teachers: teachers.sort(),
             subjects: subjects.sort(),
-            grades: grades.sort()
+            grades: grades.sort(function(a,b){
+                return a - b;
+            })
         });
 
         teachersElement.innerHTML = teachersTemplate({
