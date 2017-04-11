@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <script src="handlebars.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.css" />
+        <script class="teachersTemplate" type="text/handlebars-x">
+            {{#each teachers}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{subject}}</td>
+                <td>{{grade}}</td>
+            </tr>
+            {{/each}}
+        </script>
+        <script class="filterTemplate" type="text/handlebars-x">
+        <span class="field">
+            <label for="teacher">Teachers</label>
+            <select class="teachers" class="teacherFilter">
+            {{#each teachers}}
+                <option>{{this}}</option>
+            {{/each}}
+            </select>
+        </span>
+        <span class="field">
+            <label for="subject">Subjects</label>
+            <select class="" class="subjectFilter">
+            {{#each subjects}}
+                <option>{{this}}</option>
+            {{/each}}
+            </select>
+        </span>
+        <span class="field">
+            <label for="teacher">Grades</label>
+            <select class="" class="gradesFilter">
+            {{#each grades}}
+                <option>{{this}}</option>
+            {{/each}}
+            </select>
+        </span>
+        <input type="button" name="filterButton" value="Filter">
+
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="add">
+                <h1>Add teacher</h1>
+                <div class="field">
+                    <label for="teacher">Name</label>
+                    <input type="text" name="teacher" class="teacherName">
+                </div>
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" class="subject">
+                </div>
+                <div class="field">
+                    <label for="grade">Grade</label>
+                    <input type="text" name="grade" class="grade">
+                </div>
+                <div class="field">
+                    <label for="grade"></label>
+                    <input type="button" name="" value="Add" class="addButton">
+                </div>
+
+            </div>
+            <div class="">
+                <h1>Filters</h1>
+
+                <div class="filters">
+
+                </div>
+
+            </div>
+
+            <div class="">
+
+            </div>
+            <div class="">
+                <h1>Results</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Teacher</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="teacherList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+    <script src="organizer.js" charset="utf-8"></script>
+</html>

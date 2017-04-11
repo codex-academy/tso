@@ -1,0 +1,40 @@
+body {
+    background-color: #4CAF50;
+    margin: 1em;
+}
+
+input[type='button']{
+    width : 10em;
+    height: 2em;
+}
+
+.container {
+    width : 1024px;
+    background-color: #fff;
+    margin : auto;
+    padding : 1em;
+    box-sizing: border-box;
+
+}
+
+.field {
+    padding : 0.25em;
+}
+
+.field label {
+    display: inline-block;
+    background-color: #fff;
+    width : 10%;
+    text-align: right;
+    font-weight: bold;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.filters {
+
+}
+
+.field input[type='text']{
+    padding : 0.5em;
+}
